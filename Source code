@@ -1,1 +1,8 @@
-
+!pip install pandas numpy scikit-learn openpyxl seaborn matplotlib surprise
+!pip install numpy==1.24.4
+from google.colab import filesimport pandas as pd
+# Upload your Excel fileuploaded = files.upload()
+# Read the file
+file_path = next(iter(uploaded))df = pd.read_excel(file_path)
+# Preview
+df.head()
